@@ -6,21 +6,28 @@
 /*   By: sprocopo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 14:48:53 by sprocopo          #+#    #+#             */
-/*   Updated: 2020/07/09 14:51:28 by sprocopo         ###   ########.fr       */
+/*   Updated: 2020/07/10 09:33:40 by sprocopo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+
+#include <stdio.h>
+
+void ft_putchar(char c)
+{
+	write (1, &c, 1);
+}
 
 void ft_print_numbers(void)
-
 {
-	write (1, "0123456789", 10);
+	char    n;
+
+	n = 0;
+
+	while (n <= 9)
+	{
+		ft_putchar(n);
+		n = n + 1;
+	}
 }
 
-int	main(void)
-
-{
-	ft_print_numbers();
-	return 0;
-}
