@@ -6,12 +6,12 @@
 /*   By: sprocopo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 14:48:53 by sprocopo          #+#    #+#             */
-/*   Updated: 2020/07/10 09:33:40 by sprocopo         ###   ########.fr       */
+/*   Updated: 2020/07/11 15:20:59 by sprocopo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include <stdio.h>
+#include <unistd.h>
 
 void ft_putchar(char c)
 {
@@ -21,7 +21,6 @@ void ft_putchar(char c)
 void ft_print_numbers(void)
 {
 	char    n;
-
 	n = 0;
 
 	while (n <= 9)
@@ -31,3 +30,7 @@ void ft_print_numbers(void)
 	}
 }
 
+int main(void);
+{
+	ft_print_numbers();
+}
