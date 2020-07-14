@@ -6,11 +6,16 @@
 /*   By: sprocopo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 10:18:46 by sprocopo          #+#    #+#             */
-/*   Updated: 2020/07/11 16:02:31 by sprocopo         ###   ########.fr       */
+/*   Updated: 2020/07/14 12:12:03 by sprocopo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar(char c);
+#include <unistd.h>
+
+void ft_putchar(char c)
+{
+write (1, &c, 1);
+}
 
 void ft_print_comb2(void)
 {
@@ -52,3 +57,10 @@ void ft_print_comb2(void)
     a++;
 	}
 }
+
+int main (void)
+{
+	ft_print_comb2();
+	return 0;
+}
+
