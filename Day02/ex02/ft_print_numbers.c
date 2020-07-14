@@ -6,7 +6,7 @@
 /*   By: sprocopo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 14:48:53 by sprocopo          #+#    #+#             */
-/*   Updated: 2020/07/11 15:20:59 by sprocopo         ###   ########.fr       */
+/*   Updated: 2020/07/14 11:00:28 by sprocopo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,17 @@ void ft_putchar(char c)
 void ft_print_numbers(void)
 {
 	char    n;
-	n = 0;
+	n = '0';
 
-	while (n <= 9)
+	while (n <= '9')
 	{
 		ft_putchar(n);
 		n = n + 1;
 	}
 }
 
-int main(void);
+int main(void)
 {
 	ft_print_numbers();
+	return 0;
 }
